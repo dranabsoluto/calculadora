@@ -20,6 +20,7 @@ public class Calculadora {
 				System.out.println("Elija la operación: ");
 				System.out.println("1. Suma ");
 				System.out.println("2. Resta ");
+				System.out.println("3. Multiplicación ");
 				byte opc = teclado.nextByte();
 				teclado.close();
 				switch(opc) {
@@ -32,6 +33,11 @@ public class Calculadora {
 					resultado=numero1-numero2;
 					System.out.print("La resta es: "+ resultado);
 					break;
+				case 3:
+
+                                        resultado=numero1*numero2;
+                                        System.out.print("La multiplicación es: "+ resultado);
+                                        break;
 				}
 	}
 
